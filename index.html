@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>TasteBuds</title>
+</head>
+
+<body>
+  <section class="showcase">
+
+    <header>
+      <h2 class="logo">TasteBuds</h2>
+      <div class="toggle"></div>
+    </header>
+
+    <video src="assests/ice_drink.mp4" muted loop autoplay id="video"> </video>
+
+    <div class="overlay"></div>
+
+    <div class="text">
+      <h2>OUR ORIGINALS,<br>YOUR FAVORITES.</h2>
+      <h3>MADE WITH LOVE</h3>
+      <p>Deserts and Drinks from our Signature Selections.Our products are made with the highest quality ingredients
+        with best in industry standard practices. </p>
+      <a href="#">EXPLORE</a>
+    </div>
+
+    <ul class="social">
+      <li><a href="#"><img src="assests/facebook.png" alt=""></a></li>
+      <li><a href="#"><img src="assests/twitter.png" alt=""></a></li>
+      <li><a href="#"><img src="assests/instagram.png" alt=""></a></li>
+    </ul>
+
+  </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a> </li>
+      <li><a href="#">Buy</a> </li>
+      <li><a href="#">Enquiry</a> </li>
+      <li><a href="#">Contact</a> </li>
+    </ul>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+
+    })
+  </script>
+
+</body>
+
+</html>
